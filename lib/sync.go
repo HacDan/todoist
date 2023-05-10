@@ -47,10 +47,10 @@ type Store struct {
 	Projects     Projects      `json:"projects"`
 	Sections     Sections      `json:"sections"`
 	Reminders    []struct {
-		DateLang     string      `json:"date_lang"`
-		Due          *Due        `json:"due"`
-		ID           string      `json:"id"`
-		IsDeleted    bool        `json:"is_deleted"`
+		DateLang string `json:"date_lang"`
+		Due      *Due   `json:"due"`
+		ID       string `json:"id"`
+		//IsDeleted    int         `json:"is_deleted"` Issue #234
 		ItemID       string      `json:"item_id"`
 		MinuteOffset int         `json:"minute_offset"`
 		NotifyUID    string      `json:"notify_uid"`
